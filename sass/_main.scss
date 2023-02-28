@@ -1,0 +1,25 @@
+/*CONTENEDORES DE GRADIENTE */
+
+.gradient-container-one {
+	height: 113rem;
+	background-image: linear-gradient(to bottom, #44c398, #002652);
+	clip-path: polygon(100% 4%, 100% 100%, 0 92%, 0 0);
+}
+
+.gradient-container-two {
+	height: 21.31rem;
+	background-image: linear-gradient(to bottom, #44c398, #002652);
+	clip-path: polygon(50% 0, 100% 30%, 100% 100%, 0 100%, 0 30%);
+}
+
+.gradient-container-three {
+	height: 38rem;
+	background-image: linear-gradient(to bottom, #44c398, #002652);
+	clip-path: polygon(100% 0%, 100% 80%, 0 100%, 0 0);
+}
+
+.gradient-container-four {
+	height: 40rem;
+	background-image: linear-gradient(to bottom, #44c398, #002652);
+	clip-path: polygon(100% 0%, 100% 100%, 0 100%, 0 0);
+}

@@ -1,0 +1,26 @@
+table {
+	text-align: left;
+	width: 100%;
+	font-family: "Roboto", sans-serif;
+	margin-bottom: 1rem;
+	box-shadow: 10px -25px 19px -10px rgba(0, 179, 119, 0.75);
+	border: 1px solid $teal;
+}
+
+th {
+	font-size: 16px;
+	font-weight: 700;
+	padding: 0 0.5rem;
+	background-color: $teal;
+	color: $black;
+}
+
+td {
+	font-size: 14px;
+	border: 1px solid $teal;
+	padding: 0.5rem;
+}
+
+.no-shadow {
+	box-shadow: unset;
+}

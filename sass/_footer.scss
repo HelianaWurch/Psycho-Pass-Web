@@ -1,0 +1,40 @@
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $darkteal;
+	color: $white;
+	margin: -0.1rem 0;
+	padding: 2rem 0;
+	text-align: center;
+
+	.social {
+		display: flex;
+		justify-content: center;
+	}
+
+	.social a {
+		color: $white;
+		font-size: 1.125rem;
+		margin-left: 1.25rem;
+		padding: 0.5rem;
+		-webkit-transition: 0.45s;
+		transition: 0.45s;
+		&:hover {
+			-moz-transform: scale(1.4);
+			-webkit-transform: scale(1.4);
+			-o-transform: scale(1.4);
+			-ms-transform: scale(1.4);
+			transform: scale(1.4);
+			color: $teal;
+		}
+	}
+
+	.social a:first-child {
+		margin-left: 0;
+		padding-left: 0;
+	}
+	.social a:last-child {
+		padding-right: 0;
+	}
+}

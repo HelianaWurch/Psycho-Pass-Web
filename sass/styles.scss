@@ -1,0 +1,842 @@
+@import "variables";
+@import "general";
+@import "nav";
+@import "main";
+@import "footer";
+@import "tables";
+
+/* MEDIAS */
+
+@media screen and (min-width: 768px) {
+	#urobuchi-img {
+		margin-left: 0rem;
+	}
+
+	.article-div iframe {
+		width: 100%;
+		height: 40rem;
+	}
+
+	.temporada01-img {
+		position: relative;
+		left: -13%;
+		top: -32%;
+		margin-bottom: -15%;
+		z-index: -1;
+		width: 130%;
+		height: 80rem;
+		object-fit: cover;
+		object-position: top;
+	}
+
+	.temporada01-info {
+		background-color: $black;
+		width: 100%;
+	}
+
+	.temporada-num {
+		font-size: 18rem;
+		overflow: visible;
+		position: relative;
+		top: -2.5rem;
+		text-align: right;
+		text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+		z-index: 4;
+	}
+
+	.temporada-title {
+		font-size: 5rem;
+		overflow: visible;
+		position: relative;
+		top: 4rem;
+		right: 1rem;
+		text-align: right;
+		text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+		z-index: 4;
+		color: $teal;
+	}
+
+	.title-temp {
+		padding-top: 10rem;
+		margin: 0 10%;
+	}
+
+	.article-div {
+		margin: 2rem 1rem;
+		width: 100%;
+	}
+
+	.parallax {
+		background-position: center;
+		position: relative;
+		width: 100%;
+		height: 40rem;
+		z-index: 3;
+	}
+
+	.parallax2 {
+		position: relative;
+		width: 100%;
+		height: 40rem;
+		z-index: 3;
+	}
+
+	.parallax3 {
+		position: relative;
+		width: 100%;
+		height: 40rem;
+		z-index: 3;
+	}
+
+	.justify-right {
+		justify-content: right;
+		justify-items: right;
+	}
+
+	/* END */
+
+	div #white-background-two {
+		height: 58rem;
+	}
+
+	.makishima-design {
+		position: relative;
+		left: 10%;
+		margin-top: 25%;
+	}
+
+	.pelicula-destacada {
+		margin-top: 15%;
+		width: 100%;
+		height: unset;
+	}
+
+	.gradient-container-four {
+		height: 20rem;
+	}
+
+	#movie {
+		padding: unset;
+		flex-flow: row nowrap;
+		margin: unset;
+		img {
+			margin: 15% 10%;
+			width: 85%;
+		}
+		h4 {
+			margin: 10% 10% 0% 0%;
+		}
+		p {
+			margin: 0% 10% 10% 0;
+		}
+		.article-div img {
+			width: 100%;
+		}
+	}
+
+	.case01 {
+		display: none;
+	}
+
+	.article-img {
+		width: 100%;
+
+		img {
+			height: 15rem;
+			object-fit: cover;
+			object-position: top;
+			width: 100%;
+		}
+	}
+
+	/*-------------FORM-----------------------------------------------------------------------------*/
+	form p {
+		font-family: "Montserrat", sans-serif;
+		margin-top: 0.5rem 0;
+	}
+
+	form label {
+		font-family: "Montserrat", sans-serif;
+	}
+
+	form select {
+		margin: 8px 0;
+	}
+
+	form input {
+		margin: 8px 0;
+		padding: 1rem;
+		opacity: 100%;
+		position: unset;
+		display: unset;
+		width: 90%;
+		height: unset;
+	}
+	form textarea {
+		margin: 1rem 0;
+	}
+
+	.btn-form {
+		width: 100%;
+		cursor: pointer;
+	}
+
+	.topicos-table {
+		width: 75%;
+	}
+
+	h1 {
+		font-size: $font-size-ftet;
+		width: 100%;
+	}
+
+	h2 {
+		margin: 1rem 3rem;
+	}
+
+	p {
+		font-size: $font-size-sxtn;
+	}
+
+	.btn {
+		width: unset;
+		padding: 1rem 4rem;
+	}
+
+	.container {
+		flex-flow: row wrap;
+		justify-content: space-around;
+		padding: 4rem;
+	}
+
+	.section-white {
+		margin: 0 3rem;
+		padding-top: 3rem;
+	}
+
+	.personajes-container {
+		grid-template-columns: repeat(2, 1fr);
+		margin-bottom: 4rem;
+
+		.div-galery {
+			h6 {
+				left: 10%;
+				top: 5%;
+				font-size: $font-size-twfr;
+			}
+
+			p {
+				left: 10%;
+				top: 30%;
+				width: 80%;
+				font-size: $font-size-sxtn;
+			}
+		}
+	}
+
+	#peliculas-sinners {
+		flex-direction: row;
+
+		#case-one-img {
+			top: -10rem;
+			left: -2%;
+			margin-bottom: -10rem;
+
+			img {
+				max-width: 800px;
+				margin-bottom: 5rem;
+			}
+		}
+
+		.peliculas-sinners-text {
+			max-width: 300px;
+		}
+	}
+
+	#temporadas-serie {
+		flex-direction: row;
+
+		#serie-img {
+			left: -2%;
+			top: -12rem;
+			height: 30rem;
+			z-index: -1;
+
+			img {
+				max-width: 600px;
+			}
+		}
+
+		.temporadas-serie-text {
+			max-width: 300px;
+		}
+	}
+
+	#temporadas-btn {
+		position: relative;
+		top: 32rem;
+		width: 80%;
+		left: -10%;
+	}
+
+	#introduccion,
+	#topicos {
+		margin: 0 3rem;
+	}
+
+	.gradient-container-one {
+		height: 143rem;
+	}
+
+	.gradient-container-three {
+		height: 28rem;
+	}
+}
+
+@media screen and (min-width: 1220px) {
+	.article-div {
+		margin: 1rem 0rem;
+		width: 45%;
+	}
+	.article-div iframe {
+		height: 30rem;
+	}
+
+	.staff {
+		margin: 1rem 0;
+	}
+	.makishima-design {
+		margin-top: 30%;
+	}
+
+	#urobuchi-img {
+		margin-top: 5rem;
+	}
+
+	#amano-img {
+		margin-bottom: 5rem;
+	}
+
+	div #white-background-two {
+		height: 75rem;
+	}
+
+	#openings .p-movies {
+		width: 65%;
+	}
+
+	.gradient-container-four {
+		height: 33rem;
+		background-image: linear-gradient(to bottom, #44c398, #002652);
+		clip-path: polygon(100% 10%, 100% 100%, 0 100%, 0 0);
+	}
+
+	#movie {
+		flex-flow: row nowrap;
+		margin: unset;
+		img {
+			margin: 15% 30%;
+		}
+		h4 {
+			margin: 15% 30% 2% 30%;
+		}
+		p {
+			margin: 0 30%;
+		}
+	}
+
+	.case01 {
+		position: absolute;
+		top: 12%;
+		left: 58.5%;
+		height: 55%;
+		display: unset;
+	}
+
+	.hidden {
+		overflow: hidden;
+	}
+
+	.parallax {
+		background-image: url("../img/art-akira-amano-psycho-pass-1530.jpg");
+		width: 100%;
+		height: 46rem;
+	}
+
+	/* NOTICIAS */
+	.flex {
+		margin: 0 2rem;
+	}
+
+	#formulario {
+		margin-top: -1rem;
+		width: 45%;
+	}
+
+	.pelicula-destacada {
+		width: 100%;
+		height: unset;
+	}
+
+	.btn-form {
+		width: 100%;
+	}
+
+	#articles-container {
+		width: 40%;
+	}
+
+	.article-p {
+		width: 100%;
+	}
+
+	/* GENERAL */
+
+	#logo-pp {
+		position: relative;
+		left: -0.7%;
+	}
+
+	.personajes-container {
+		.div-galery {
+			h6 {
+				position: absolute;
+				left: 10%;
+				top: 50%;
+				font-size: $font-size-twfr;
+			}
+
+			p {
+				overflow: hidden;
+				position: absolute;
+				left: 10%;
+				top: 65%;
+				font-size: $font-size-ettn;
+			}
+		}
+	}
+
+	#introduccion {
+		margin: 2rem 0;
+		display: flex;
+		flex-flow: column nowrap;
+		padding: 0rem 10rem;
+	}
+
+	#p-introduccion {
+		width: 90%;
+	}
+
+	#peliculas-sinners {
+		flex-direction: row;
+		padding: 0rem 10rem;
+
+		#case-one-img {
+			top: -7.5rem;
+
+			img {
+				max-width: 700px;
+			}
+		}
+		.peliculas-sinners-text {
+			max-width: 400px;
+		}
+	}
+
+	#temporadas-serie {
+		padding: 0rem 10rem;
+
+		#serie-img {
+			left: -2%;
+			height: 45rem;
+
+			img {
+				max-width: 700px;
+			}
+		}
+
+		.temporadas-serie-text {
+			margin-top: 0;
+			max-width: 400px;
+		}
+	}
+
+	#temporadas-btn {
+		position: relative;
+		top: 42rem;
+		width: 80%;
+		left: -10%;
+	}
+
+	.gradient-container-one {
+		height: 75rem;
+	}
+
+	iframe {
+		margin: 1rem;
+		max-width: 45%;
+	}
+
+	.topicos-table {
+		width: 45%;
+	}
+
+	#topicos {
+		margin: 0 12rem;
+	}
+
+	/* NAV */
+	header {
+		z-index: 5;
+		padding: 1.63rem 6.25rem;
+
+		nav {
+			align-items: center;
+
+			.nav-box-two {
+				padding-top: 0px;
+
+				ul {
+					position: relative;
+					top: 0;
+					right: 0;
+					width: unset;
+					overflow: hidden;
+					background: unset;
+					height: unset;
+
+					li {
+						padding-left: 50px;
+						display: inline-block;
+
+						a {
+							padding: unset;
+							line-height: unset;
+							color: $black;
+							&:hover {
+								text-decoration: line-through;
+								color: $teal;
+							}
+							&:active {
+								color: rgba(6, 10, 36, 0.56);
+							}
+						}
+					}
+				}
+
+				input {
+					display: none;
+				}
+
+				span {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.gradient-container-three {
+		height: 25rem;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	#openings .p-movies {
+		width: 50%;
+	}
+
+	/* NOTICIAS */
+	.flex {
+		display: flex;
+		flex-flow: row wrap;
+		margin: 0 2.5rem;
+	}
+
+	article {
+		flex-flow: row wrap;
+	}
+
+	.article-info {
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+	}
+
+	#formulario {
+		margin: -1rem 5%;
+		width: 40%;
+	}
+
+	.btn-form {
+		width: 100%;
+		cursor: pointer;
+	}
+
+	#articles-container {
+		margin: 0 5%;
+		width: 40%;
+	}
+
+	.article-img {
+		margin-right: 2rem;
+		width: 30%;
+
+		img {
+			object-fit: unset;
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	.article-p {
+		width: 65%;
+	}
+
+	#logo-pp {
+		margin: 0 10rem;
+	}
+
+	h1 {
+		font-size: $font-size-stfr;
+		width: 100%;
+	}
+
+	h2 {
+		font-size: $font-size-ftet;
+		margin: 1rem 10rem;
+	}
+
+	.button {
+		font-size: $font-size-ettn;
+	}
+
+	.section-white {
+		margin: 0 10rem;
+	}
+
+	.container {
+		flex-flow: row wrap;
+		justify-content: space-around;
+		padding: 1rem;
+		margin-bottom: 4rem;
+	}
+
+	.topicos-table {
+		margin: 0 2rem;
+		width: 25%;
+	}
+
+	.gradient-container-one {
+		height: unset;
+		padding: 8rem 0;
+		clip-path: polygon(100% 10%, 100% 100%, 0 90%, 0 0);
+	}
+
+	.gradient-container-two {
+		height: unset;
+		padding: 8rem 0;
+		clip-path: polygon(50% 0, 100% 30%, 100% 100%, 0 100%, 0 30%);
+	}
+
+	.gradient-container-three {
+		height: 28rem;
+		background-image: linear-gradient(to bottom, #44c398, #002652);
+		clip-path: polygon(100% 0%, 100% 60%, 0 100%, 0 0);
+	}
+
+	#introduccion {
+		display: flex;
+		flex-flow: column nowrap;
+		padding: 5rem 0rem;
+	}
+
+	#p-introduccion {
+		margin: 2rem 0rem 0 10rem;
+		width: 45%;
+	}
+
+	/* GENERALES */
+
+	iframe {
+		margin: 2rem 2.4rem;
+		max-width: 40%;
+	}
+
+	.personajes-container {
+		grid-template-columns: repeat(3, 1fr);
+
+		.div-galery {
+			margin: -0.15rem 0;
+			background-color: black;
+			position: relative;
+
+			h6 {
+				position: absolute;
+				left: 10%;
+				top: 50%;
+			}
+
+			p {
+				overflow: hidden;
+				position: absolute;
+				left: 10%;
+				top: 65%;
+			}
+		}
+	}
+
+	#peliculas-sinners {
+		flex-direction: row;
+
+		#case-one-img {
+			top: -8rem;
+
+			img {
+				max-width: 800px;
+			}
+		}
+		.peliculas-sinners-text {
+			max-width: 700px;
+		}
+	}
+
+	#temporadas-serie {
+		margin-bottom: -15rem;
+
+		#serie-img {
+			img {
+				position: relative;
+				top: -9.5rem;
+				z-index: -1;
+			}
+		}
+
+		.temporadas-serie-text {
+			max-width: 770px;
+		}
+	}
+
+	#temporadas-btn {
+		position: relative;
+		top: 2rem;
+		width: 80%;
+		left: 0%;
+	}
+
+	footer {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 2rem 10rem;
+	}
+
+	#movie {
+		img {
+			margin-top: 15%;
+			height: 65%;
+			object-fit: cover;
+		}
+	}
+
+	.makishima-design {
+		position: relative;
+		left: 58%;
+		margin-top: 5%;
+	}
+
+	div #white-background-two {
+		height: 50rem;
+	}
+
+	.staff {
+		margin: 1rem 10rem;
+	}
+
+	#urobuchi-img {
+		margin-top: 1rem;
+	}
+
+	.img-nomargin {
+		margin-top: -15rem;
+	}
+
+	.temporada01-img {
+		position: relative;
+		left: -13%;
+		top: -32%;
+		margin-bottom: -15%;
+
+		z-index: -1;
+		width: 130%;
+		height: 80rem;
+		object-fit: cover;
+		object-position: top;
+	}
+
+	.temporada01-info {
+		background-color: $black;
+		width: 100%;
+	}
+
+	.temporada-num {
+		font-size: 18rem;
+		overflow: visible;
+		position: relative;
+		top: -2.5rem;
+		text-align: right;
+		text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+		z-index: 4;
+	}
+
+	.temporada-title {
+		font-size: 5rem;
+		overflow: visible;
+		position: relative;
+		top: 4rem;
+		right: 1rem;
+		text-align: right;
+		text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+		z-index: 4;
+		color: $teal;
+	}
+
+	.title-temp {
+		padding-top: -10rem;
+		margin: 0 6%;
+	}
+
+	.article-div {
+		margin: 2rem 1rem;
+		width: 40%;
+	}
+
+	.article-div iframe {
+		margin: 2rem 0;
+		max-width: unset;
+		width: 95%;
+		height: 30rem;
+	}
+
+	.parallax {
+		position: relative;
+		width: 100%;
+		height: 45rem;
+
+		z-index: 3;
+	}
+
+	.parallax2 {
+		position: relative;
+		width: 100%;
+		height: 45rem;
+
+		z-index: 3;
+	}
+
+	.parallax3 {
+		position: relative;
+		width: 100%;
+		height: 45rem;
+
+		z-index: 3;
+	}
+}

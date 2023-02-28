@@ -1,0 +1,97 @@
+/*Colors*/
+$black: #000000;
+$white: #ffffff;
+
+$teal: #44c398;
+$darkteal: #022144;
+
+$font-family-mono: "Space Mono", monospace;
+$font-family-sans: "Roboto", sans-serif;
+
+/*Fonts*/
+// @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap");
+
+$font-size-frtn: 0.875rem;
+$font-size-sxtn: 1rem;
+$font-size-ettn: 1.125rem;
+$font-size-twfr: 1.5rem;
+$font-size-ttsx: 2.25rem;
+$font-size-ftet: 3rem;
+$font-size-stfr: 4rem;
+
+%titular-principal {
+	width: 80%;
+	// font-family: $font-family-sans;
+	font-family: $font-family-mono;
+	font-weight: 400;
+	font-size: $font-size-ttsx;
+	letter-spacing: 0;
+	line-height: 2.625rem;
+	margin-bottom: 0;
+}
+
+%titular-dos {
+	font-family: $font-family-mono;
+	font-size: $font-size-ttsx;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 2.625rem;
+	margin: 1rem;
+}
+
+%titular-tres {
+	font-family: $font-family-sans;
+	font-size: $font-size-twfr;
+	font-weight: 700;
+	letter-spacing: 0;
+}
+
+%titular-cuatro {
+	font-family: $font-family-mono;
+	font-size: $font-size-twfr;
+	font-weight: 700;
+	letter-spacing: 0;
+}
+
+%titular-destacado {
+	font-family: $font-family-sans;
+	font-size: $font-size-sxtn;
+	font-weight: 900;
+	letter-spacing: 0;
+	color: $teal;
+}
+
+%parrafos {
+	font-family: $font-family-sans;
+	font-size: $font-size-frtn;
+	line-height: 1.375rem;
+	letter-spacing: 0;
+}
+
+/* PADDINGS Y MARGINS */
+$padding-cero: 0% 0%;
+
+/* BUTTONS */
+%button {
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	width: 100%;
+	margin: 2rem 0rem;
+	padding: 1rem 0rem;
+	border: none;
+	font-family: $font-family-sans;
+	font-size: $font-size-sxtn;
+	font-weight: 900;
+	line-height: 1.375rem;
+	color: $black;
+	background-color: $teal;
+	-webkit-transition: 0.45s;
+	transition: 0.45s;
+	&:hover {
+		color: $white;
+		background-image: linear-gradient(70deg, $teal, $darkteal);
+		box-shadow: 4px 4px 0px 0px rgba(104, 255, 167, 0.795);
+	}
+}

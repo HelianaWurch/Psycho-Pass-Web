@@ -1,0 +1,129 @@
+.header-temporadas {
+	background-color: $black;
+	color: $white;
+	z-index: 5;
+	.nav-temporadas {
+		background-color: $black;
+		color: $white;
+		ul li a {
+			color: $white;
+		}
+		.nav-box-one {
+			background-color: $black;
+		}
+		.nav-box-two span {
+			background-color: white;
+		}
+	}
+}
+header {
+	position: sticky;
+	top: 0;
+	z-index: 5;
+	background: $white;
+	padding: 1rem;
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+
+		ul {
+			background: $darkteal;
+			width: 100%;
+			position: absolute;
+			top: 3.5rem;
+			right: 0;
+			overflow: hidden;
+			list-style: none;
+			height: 0px;
+
+			li {
+				position: relative;
+				text-align: left;
+				list-style: none;
+
+				a {
+					font-family: $font-family-mono;
+					font-size: $font-size-sxtn;
+					color: $white;
+					line-height: 28px;
+					position: relative;
+					padding: 0.9rem 1rem;
+					display: block;
+					&:hover {
+						text-decoration: line-through;
+						color: $teal;
+					}
+					&:active {
+						color: rgba(6, 10, 36, 0.56);
+					}
+				}
+			}
+		}
+
+		.nav-logo {
+			width: 36px;
+			height: 36px;
+		}
+
+		.nav-box-one {
+			background-color: $white;
+		}
+
+		.nav-box-two {
+			padding-top: 10px;
+
+			/*CHECKBOX*/
+
+			input[type="checkbox"]:checked ~ ul {
+				height: 224px;
+			}
+
+			input {
+				display: block;
+				top: 15px;
+				right: 5px;
+				height: 32px;
+				width: 40px;
+				opacity: 0;
+				z-index: 2;
+				position: absolute;
+			}
+
+			/*LINEAS DE MENU HAMBURGUESA*/
+
+			span {
+				display: block;
+				width: 25px;
+				height: 2.5px;
+				margin-bottom: 6.5px;
+				background: $black;
+				z-index: 1;
+				transform-origin: 3px 0px;
+			}
+
+			span:first-child {
+				transform-origin: 0% 0%;
+			}
+
+			span:nth-last-child(2) {
+				transform-origin: 0% 100%;
+			}
+		}
+		/*ANIMACIÓN DE LA CRUZ*/
+
+		input:checked ~ span {
+			opacity: 1;
+			transform: rotate(45deg) translate(2px, 1px);
+		}
+
+		input:checked ~ span:nth-last-child(3) {
+			opacity: 0;
+			transform: rotate(0deg) scale(0.2, 0.2);
+		}
+
+		input:checked ~ span:nth-last-child(2) {
+			transform: rotate(-45deg) translate(1px, 0px);
+		}
+	}
+}

@@ -1,0 +1,476 @@
+body {
+	margin: 0;
+	padding: $padding-cero;
+	box-sizing: border-box;
+	background-color: $black;
+	color: $white;
+}
+
+main #white-background {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100rem;
+	background-color: white;
+	z-index: -2;
+}
+
+div #white-background-two {
+	position: absolute;
+	top: 0px;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 60rem;
+	background-color: white;
+	z-index: -2;
+}
+
+#urobuchi-img {
+	margin-top: 5rem;
+	margin-left: 2rem;
+}
+
+#amano-img {
+	margin-bottom: 5rem;
+}
+
+.makishima-design {
+	position: relative;
+	left: 0%;
+	margin-top: 22%;
+}
+
+#introduccion,
+#temporadas-serie {
+	color: $black;
+}
+
+.staff {
+	margin: 1rem 0;
+}
+
+h1 {
+	@extend %titular-principal;
+}
+
+h2 {
+	@extend %titular-dos;
+}
+
+h3 {
+	@extend %titular-tres;
+}
+
+h4 {
+	@extend %titular-cuatro;
+}
+
+h5 {
+	@extend %titular-destacado;
+}
+
+.section-white {
+	margin: 0 1rem;
+	padding-top: 3rem;
+	color: $white;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	@extend %parrafos;
+}
+
+#logo-pp {
+	width: 50%;
+}
+
+.button {
+	@extend %button;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0rem 1rem;
+}
+
+iframe {
+	width: 100%;
+	height: 44vh;
+	border: none;
+	margin: 0.8rem 0;
+	transition: 0.45s;
+	-webkit-transition: 0.45s;
+	-moz-transition: 0.45s;
+	-ms-transition: 0.45s;
+	-o-transition: 0.45s;
+	&:hover {
+		-moz-transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+		-o-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		transform: scale(1.05);
+		box-shadow: 1px 4px 19px -5px rgba(0, 0, 0, 0.75);
+	}
+}
+
+.personajes-container {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 0;
+	overflow: hidden;
+
+	.div-galery {
+		margin: -0.15rem 0;
+		background-color: black;
+		position: relative;
+		cursor: pointer;
+
+		h6 {
+			position: absolute;
+			left: 10%;
+			top: 20%;
+			font-family: $font-family-mono;
+			font-size: $font-size-frtn;
+			color: $white;
+			opacity: 0;
+			z-index: 5;
+		}
+
+		p {
+			overflow: hidden;
+			position: absolute;
+			left: 10%;
+			top: 35%;
+			width: 80%;
+			font-family: $font-family-mono;
+			font-size: $font-size-frtn;
+			color: $white;
+			opacity: 0;
+			z-index: 4;
+		}
+		&:hover {
+			h6,
+			p {
+				opacity: 100%;
+				transition: 1.3s ease;
+				-webkit-transition: 1.3s ease;
+				-moz-transition: 1.3s ease;
+				-ms-transition: 1.3s ease;
+				-o-transition: 1.3s ease;
+			}
+
+			img {
+				opacity: 25%;
+				-moz-transform: scale(1.02);
+				-webkit-transform: scale(1.02);
+				-o-transform: scale(1.02);
+				-ms-transform: scale(1.02);
+				transform: scale(1.02);
+			}
+		}
+	}
+
+	img {
+		width: 100%;
+		-webkit-transition: 0.45s;
+		transition: 0.45s;
+	}
+}
+
+.line-through {
+	text-decoration: line-through;
+}
+
+#novedades {
+	text-align: center;
+}
+
+#peliculas-sinners {
+	#case-one-img {
+		position: relative;
+		top: -10rem;
+		left: -2%;
+		margin-bottom: -5rem;
+
+		img {
+			max-width: 300px;
+		}
+	}
+}
+
+#temporadas-serie {
+	#serie-img {
+		margin-left: 2.5rem;
+		position: relative;
+
+		top: -5rem;
+		height: 15rem;
+		z-index: -1;
+
+		img {
+			max-width: 300px;
+		}
+	}
+}
+
+.topicos-table {
+	width: 100%;
+}
+
+#introduccion,
+#topicos {
+	margin: 0rem 1rem;
+}
+
+.container-others-img {
+	width: 99.3%;
+	height: 20rem;
+	border: 1px solid $teal;
+	display: flex;
+	justify-content: center;
+}
+
+.others-img {
+	width: 99%;
+	height: 20rem;
+	object-fit: cover;
+	box-shadow: 10px -10px 19px -10px rgba(0, 179, 119, 0.75);
+}
+
+.peliculas-sinners-text h2,
+.temporadas-serie-text h2 {
+	margin: 1rem 0rem;
+}
+
+/*-------------FORM-----------------------------------------------------------------------------*/
+
+form {
+	width: 100%;
+}
+
+form select {
+	margin: 8px 0;
+}
+
+form input {
+	padding: 1rem;
+	opacity: 100%;
+	position: unset;
+	display: unset;
+	width: 90%;
+	height: unset;
+}
+form textarea {
+	margin: 1rem 0;
+	width: 100%;
+}
+
+.btn-form {
+	width: 100%;
+	cursor: pointer;
+}
+
+hr {
+	margin-top: 2rem;
+	opacity: 50%;
+	border: 2px dotted $teal;
+	width: 100%;
+	height: 0px;
+}
+
+/* NOTICIAS */
+.flex {
+	display: flex;
+	flex-flow: column wrap;
+	margin: 0 2rem;
+}
+
+article {
+	flex-flow: column wrap;
+}
+
+.article-info {
+	display: flex;
+	flex-flow: column wrap;
+	width: 100%;
+}
+
+#formulario {
+	margin: 0 2%;
+	width: 100%;
+}
+
+.btn-form {
+	width: 65%;
+	cursor: pointer;
+	margin: 1rem 0;
+}
+
+#articles-container {
+	margin: 0 1%;
+	width: 100%;
+}
+
+.article-img {
+	margin-right: 2rem;
+	width: 100%;
+
+	img {
+		width: 100%;
+	}
+}
+
+.article-p {
+	width: 100%;
+}
+
+.temporada01-img {
+	position: relative;
+	left: -13%;
+	top: -32%;
+	margin-bottom: -15%;
+
+	z-index: -1;
+	width: 130%;
+	height: 80rem;
+	object-fit: cover;
+	object-position: top;
+}
+
+.temporada01-info {
+	background-color: $black;
+	width: 100%;
+}
+
+.temporada-num {
+	font-size: 15rem;
+	overflow: visible;
+	position: relative;
+	top: -2.5rem;
+	text-align: right;
+	text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+	z-index: 4;
+}
+
+.temporada-title {
+	font-size: 3rem;
+	overflow: visible;
+	position: relative;
+	top: 2.5rem;
+	right: 1rem;
+	text-align: right;
+	text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+	z-index: 4;
+	color: $teal;
+}
+
+.title-temp {
+	padding-top: 8rem;
+	margin: 0 6%;
+}
+
+.article-div {
+	margin: 2rem 0.5rem;
+	width: 95%;
+}
+
+.article-div-movie {
+	margin: 0rem 0.5rem;
+	width: 90%;
+	p,
+	h4 {
+		margin: 1rem 4rem;
+	}
+}
+
+.article-div iframe {
+	margin: 2rem 0;
+	max-width: unset;
+	width: 95%;
+	height: 10rem;
+}
+
+.parallax {
+	background-image: url("../img/art-akira-amano-psycho-pass-1530.jpg");
+	position: relative;
+	width: 100%;
+	height: 35rem;
+	background-attachment: fixed;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 3;
+}
+
+.parallax2 {
+	background-image: url("../img/psychopass2bb.jpg");
+	position: relative;
+	width: 100%;
+	height: 25rem;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 3;
+}
+
+.parallax3 {
+	background-image: url("../img/psychopass3.jpg");
+	position: relative;
+	width: 100%;
+	height: 25rem;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 3;
+}
+
+.justify-right {
+	justify-content: right;
+	justify-items: right;
+}
+
+.pelicula-destacada {
+	margin-top: 15%;
+	width: 100%;
+	height: unset;
+}
+
+#movie {
+	width: 100%;
+	margin: unset;
+	flex-flow: column nowrap;
+	margin: unset;
+
+	.article-div img {
+		width: 220%;
+	}
+
+	img {
+		width: 100%;
+	}
+	h4 {
+		margin: 10% 10% 2% 10%;
+	}
+	p {
+		margin: -2% 10%;
+	}
+}
+
+.movie {
+	display: flex;
+	flex-flow: column wrap;
+	width: 100%;
+	margin: 2rem;
+}
+
+.case01 {
+	display: none;
+}
